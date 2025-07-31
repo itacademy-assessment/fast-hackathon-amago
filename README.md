@@ -1,61 +1,214 @@
-# Briefing: Fast-Hackathon - Mob Page de Repositorios GitHub
+# Mi Aplicación Angular 🚀
 
-¡Bienvenidos a la Fast-Hackathon! En este desafío, cada equipo desarrollará una **"mob page"** que interactúe con GitHub, mostrando los repositorios de sus miembros y ofreciendo funcionalidades adicionales.
+Una aplicación web básica construida con Angular 19 que demuestra las funcionalidades principales del framework.
 
-## 🎯 Objetivo General
+## 🚀 Despliegue en Vercel
 
-Crear una **aplicación web responsive (mob page)** que se conecte a GitHub para visualizar y gestionar los repositorios de los integrantes del equipo.
+### ⚡ Despliegue automático:
 
-## ✨ Funcionalidades Requeridas
+1. **Fork o clona este repositorio**
+2. **Conecta con Vercel**:
+   - Ve a [Vercel.com](https://vercel.com)
+   - Inicia sesión con tu cuenta de GitHub
+   - Importa este repositorio
+   - Vercel detectará automáticamente que es una aplicación Angular
 
-* **Página Principal (Home/Dashboard):**
-    * Muestra una lista de los **repositorios de todos los miembros del equipo**.
-    * Implementa **filtros** para los repositorios (por ejemplo, por lenguaje, por nombre del repositorio, por propietario).
+3. **Configuración automática**:
+   - Vercel usará la configuración de `vercel.json`
+   - El comando de build será: `npm run vercel-build`
+   - La carpeta de salida será: `dist/mi-app-angular/browser`
 
-* **Autenticación y Página de Perfil (Profile Page):**
-    * Incorpora un sistema de **autenticación** que permita al usuario iniciar sesión con su cuenta de GitHub.
-    * Una vez autenticado, la página de perfil debe **mostrar solo los repositorios que pertenecen al usuario** que ha iniciado sesión.
-    * Permite la **edición de ciertas características de los repositorios** (por ejemplo, añadir etiquetas personalizadas, una breve descripción). Estos cambios *no tienen por qué sincronizarse con GitHub*; pueden ser datos almacenados localmente en la aplicación.
+4. **Variables de entorno** (opcional):
+   - No se requieren variables de entorno especiales
+   - La aplicación usa la API pública de GitHub
 
-* **Página "About":**
-    * Presenta una **pequeña descripción de cada miembro del equipo**.
+### 🔧 Despliegue manual:
 
-## 🛠️ Consideraciones Técnicas
+```bash
+# Instalar Vercel CLI
+npm i -g vercel
 
-* **Integración con GitHub:** La aplicación deberá consumir la **API pública de GitHub** para obtener la información de los repositorios. Para la autenticación, investigad la [OAuth de GitHub](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps).
-* **Responsive Design:** La "mob page" debe estar **optimizada para dispositivos móviles** y ser completamente responsive.
-* **Tecnologías Permitidas:** Se puede elegir entre las siguientes tecnologías frontend:
-    * **Vanilla JS/HTML/CSS**
-    * **React**
-    * **Angular**
+# En el directorio del proyecto
+cd mi-app-angular
 
-## ⏱️ Estructura y Dinámica de la Hackathon
+# Desplegar
+vercel
 
-* **Equipos:** Los equipos estarán compuestos por **3 o 4 personas**.
-* **Duración:** Esta es una **fast-hackathon** con una duración total de **3 horas**.
-* **Objetivo:**
-    1.  **Desarrollo y Despliegue:** Construir y **desplegar la aplicación** funcional. Se pueden usar plataformas como Netlify, Vercel o GitHub Pages para un despliegue rápido.
-    2.  **Preparación de la Presentación:** Preparar una **pequeña presentación de 3 minutos** para mostrar el resultado final.
+# Para deploys de producción
+vercel --prod
+```
 
-## 🌟 Bonus
+## 🌟 Características
 
-* **Testing:** Implementar pruebas unitarias o de integración para las funcionalidades clave.
-* **GitHub Actions:** Configurar un flujo de CI/CD básico para la aplicación.
+### ✨ Funcionalidades implementadas:
 
-## 🏆 Criterios de Valoración
-* **Funcionalidad:** Que las funcionalidades requeridas estén implementadas y sean operativas.
-* **Diseño y Usabilidad:** La interfaz de usuario, la experiencia de usuario y el diseño responsive.
-* **Calidad del Código:** Limpieza, organización y buenas prácticas en el código.
-* **Accesibilidad:** Que el sitio sea accesible para todos los usuarios, siguiendo principios básicos de accesibilidad web.
-* **Presentación:** Claridad y concisión al mostrar su trabajo en los 3 minutos asignados.
+- **🔍 Búsqueda de usuarios de GitHub**: Busca cualquier usuario y ve sus repositorios
+- **👤 Perfil completo**: Avatar, nombre, bio, estadísticas y enlaces
+- **📊 Filtros avanzados**: Por lenguaje, fecha, estrellas, nombre
+- **📦 Información detallada**: Cada repo muestra estrellas, forks, lenguaje, topics
+- **🎨 Diseño moderno**: Responsive design con tema GitHub-style
+- **⚡ SSR optimizado**: Server-Side Rendering para mejor SEO y performance
 
-## 🎬 DEMO
+### 🎨 Tecnologías utilizadas:
 
-Al finalizar la hackathon, **cada equipo tendrá 3 minutos para presentar su aplicación** ante el resto de participantes y mentores. La demo debe incluir:
+- **Angular 19**: Framework principal
+- **TypeScript**: Lenguaje de programación
+- **CSS3**: Estilos modernos con variables CSS
+- **HTML5**: Estructura semántica
+- **Angular CLI**: Herramientas de desarrollo
 
-1. **Breve explicación funcional** de la app: ¿Qué hace? ¿Cómo lo hace? ¿Qué funcionalidades implementaron?
-2. **Demostración en vivo** de la aplicación ya desplegada.
+## 🚀 Instalación y ejecución
 
-🔚 Una vez finalizadas todas las presentaciones, **todos los participantes y mentores votarán** por la mejor aplicación. **No se permite votar por el propio equipo.** La aplicación más votada será reconocida como la ganadora de esta Fast-Hackathon.
+### Prerrequisitos:
 
-💡 Consejo: No intentéis mostrar todo. Elegid **los puntos más fuertes** y destacad lo que habéis aprendido y conseguido en tan poco tiempo.
+- Node.js (versión 18 o superior)
+- npm (incluido con Node.js)
+- Angular CLI (`npm install -g @angular/cli`)
+
+### Pasos para ejecutar:
+
+1. **Clonar o navegar al directorio del proyecto**
+
+   ```bash
+   cd mi-app-angular
+   ```
+
+2. **Instalar dependencias** (si es necesario)
+
+   ```bash
+   npm install
+   ```
+
+3. **Ejecutar la aplicación en modo desarrollo**
+
+   ```bash
+   ng serve
+   ```
+
+4. **Abrir en el navegador**
+   - La aplicación estará disponible en `http://localhost:4200`
+   - Se abrirá automáticamente en tu navegador predeterminado
+
+## 📱 Estructura de la aplicación
+
+```
+src/
+├── app/
+│   ├── app.component.ts      # Componente principal con lógica
+│   ├── app.component.html    # Template HTML
+│   ├── app.component.css     # Estilos del componente
+│   ├── app.config.ts         # Configuración de la app
+│   └── app.routes.ts         # Configuración de rutas
+├── styles.css                # Estilos globales
+└── main.ts                   # Punto de entrada de la aplicación
+```
+
+## 🎯 Características de cada sección
+
+### 🏠 Inicio
+
+- **Contador interactivo**: Botones para incrementar, decrementar y resetear
+- **Lista de tareas**: Agregar nuevas tareas, marcar como completadas, eliminar
+- Demostración de data binding y event handling
+
+### ℹ️ Acerca de
+
+- Información sobre las tecnologías utilizadas
+- Lista de características implementadas
+- Badges de tecnologías
+
+### 📧 Contacto
+
+- Formulario con validación
+- Campos: nombre, email, mensaje
+- Mensaje de confirmación tras envío
+- Auto-reset del formulario
+
+## 🛠️ Comandos útiles
+
+```bash
+# Ejecutar en modo desarrollo
+ng serve
+
+# Ejecutar y abrir en navegador
+ng serve --open
+
+# Construir para producción
+ng build
+
+# Ejecutar tests
+ng test
+
+# Ejecutar e2e tests
+ng e2e
+
+# Generar componente
+ng generate component nombre-componente
+
+# Generar servicio
+ng generate service nombre-servicio
+```
+
+## 🎨 Personalización
+
+### Modificar colores:
+
+Los colores principales se definen en `app.component.css` usando variables CSS:
+
+```css
+:host {
+  --primary-color: #6366f1;
+  --secondary-color: #8b5cf6;
+  --success-color: #10b981;
+  --danger-color: #ef4444;
+  /* ... más variables */
+}
+```
+
+### Agregar nueva funcionalidad:
+
+1. Modifica `app.component.ts` para agregar nuevas propiedades y métodos
+2. Actualiza `app.component.html` para incluir la nueva UI
+3. Ajusta `app.component.css` para los estilos
+
+## 📚 Conceptos de Angular demostrados
+
+- **Componentes**: Estructura modular de la aplicación
+- **Templates**: Sintaxis de template de Angular
+- **Data Binding**: Interpolación `{{}}`, property binding `[]`, event binding `()`
+- **Directivas**: `*ngIf`, `*ngFor`, `[class]`
+- **FormsModule**: Para formularios reactivos
+- **Interfaces TypeScript**: Para tipado fuerte
+- **Lifecycle**: Manejo del ciclo de vida del componente
+
+## 🌐 Navegación
+
+La aplicación utiliza un sistema de navegación simple basado en una propiedad `currentView` que controla qué vista se muestra:
+
+- **Inicio**: Vista principal con contador y lista de tareas
+- **Acerca de**: Información sobre la aplicación
+- **Contacto**: Formulario de contacto
+
+## 📱 Responsive Design
+
+La aplicación está optimizada para diferentes tamaños de pantalla:
+
+- **Desktop**: Layout completo con sidebar
+- **Tablet**: Layout adaptado
+- **Mobile**: Layout en columna con navegación vertical
+
+---
+
+## 🤝 Contribuir
+
+¡Las contribuciones son bienvenidas! Si quieres mejorar esta aplicación:
+
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+---
+
+**Desarrollado con ❤️ usando Angular 19**
