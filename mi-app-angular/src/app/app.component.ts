@@ -28,15 +28,15 @@ export class AppComponent {
   todos: Todo[] = [
     { text: 'Aprender Angular', completed: true },
     { text: 'Crear mi primera app', completed: false },
-    { text: 'Explorar TypeScript', completed: false }
+    { text: 'Explorar TypeScript', completed: false },
   ];
-  
+
   contactForm: ContactForm = {
     name: '',
     email: '',
-    message: ''
+    message: '',
   };
-  
+
   formSubmitted = false;
 
   setView(view: string) {
@@ -60,7 +60,7 @@ export class AppComponent {
     if (this.newTodo.trim()) {
       this.todos.push({
         text: this.newTodo.trim(),
-        completed: false
+        completed: false,
       });
       this.newTodo = '';
     }
@@ -75,16 +75,20 @@ export class AppComponent {
   }
 
   onSubmit() {
-    if (this.contactForm.name && this.contactForm.email && this.contactForm.message) {
+    if (
+      this.contactForm.name &&
+      this.contactForm.email &&
+      this.contactForm.message
+    ) {
       console.log('Formulario enviado:', this.contactForm);
       this.formSubmitted = true;
-      
+
       // Resetear formulario después de 3 segundos
       setTimeout(() => {
         this.contactForm = {
           name: '',
           email: '',
-          message: ''
+          message: '',
         };
         this.formSubmitted = false;
       }, 3000);

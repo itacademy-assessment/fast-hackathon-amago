@@ -13,7 +13,8 @@
   --gray-800: #1e293b;
   --gray-900: #0f172a;
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 /* Reset y base */
@@ -23,7 +24,7 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, var(--light-bg) 0%, var(--gray-100) 100%);
   min-height: 100vh;
 }
@@ -99,8 +100,14 @@ nav {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .view h2 {
@@ -384,8 +391,14 @@ nav {
 }
 
 @keyframes slideIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Footer */
@@ -409,36 +422,36 @@ nav {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .main-content {
     padding: 1rem;
   }
-  
+
   .view {
     padding: 1.5rem;
   }
-  
+
   .view h2 {
     font-size: 1.5rem;
   }
-  
+
   .button-group {
     justify-content: center;
   }
-  
+
   .input-group {
     flex-direction: column;
   }
-  
+
   .todo-input {
     min-width: auto;
   }
-  
+
   .nav-button {
     flex: 1;
     text-align: center;
   }
-  
+
   nav {
     width: 100%;
   }

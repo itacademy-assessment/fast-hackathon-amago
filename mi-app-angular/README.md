@@ -5,6 +5,7 @@ Una aplicación web básica construida con Angular 19 que demuestra las funciona
 ## 🌟 Características
 
 ### ✨ Funcionalidades implementadas:
+
 - **Navegación SPA**: Sistema de navegación de una sola página entre diferentes vistas
 - **Contador interactivo**: Incrementar, decrementar y resetear valores
 - **Lista de tareas (TODO)**: Crear, completar y eliminar tareas
@@ -15,6 +16,7 @@ Una aplicación web básica construida con Angular 19 que demuestra las funciona
 - **Diseño responsive**: Adaptable a diferentes tamaños de pantalla
 
 ### 🎨 Tecnologías utilizadas:
+
 - **Angular 19**: Framework principal
 - **TypeScript**: Lenguaje de programación
 - **CSS3**: Estilos modernos con variables CSS
@@ -24,6 +26,7 @@ Una aplicación web básica construida con Angular 19 que demuestra las funciona
 ## 🚀 Instalación y ejecución
 
 ### Prerrequisitos:
+
 - Node.js (versión 18 o superior)
 - npm (incluido con Node.js)
 - Angular CLI (`npm install -g @angular/cli`)
@@ -31,16 +34,19 @@ Una aplicación web básica construida con Angular 19 que demuestra las funciona
 ### Pasos para ejecutar:
 
 1. **Clonar o navegar al directorio del proyecto**
+
    ```bash
    cd mi-app-angular
    ```
 
 2. **Instalar dependencias** (si es necesario)
+
    ```bash
    npm install
    ```
 
 3. **Ejecutar la aplicación en modo desarrollo**
+
    ```bash
    ng serve
    ```
@@ -66,16 +72,19 @@ src/
 ## 🎯 Características de cada sección
 
 ### 🏠 Inicio
+
 - **Contador interactivo**: Botones para incrementar, decrementar y resetear
 - **Lista de tareas**: Agregar nuevas tareas, marcar como completadas, eliminar
 - Demostración de data binding y event handling
 
 ### ℹ️ Acerca de
+
 - Información sobre las tecnologías utilizadas
 - Lista de características implementadas
 - Badges de tecnologías
 
 ### 📧 Contacto
+
 - Formulario con validación
 - Campos: nombre, email, mensaje
 - Mensaje de confirmación tras envío
@@ -109,6 +118,7 @@ ng generate service nombre-servicio
 ## 🎨 Personalización
 
 ### Modificar colores:
+
 Los colores principales se definen en `app.component.css` usando variables CSS:
 
 ```css
@@ -122,6 +132,7 @@ Los colores principales se definen en `app.component.css` usando variables CSS:
 ```
 
 ### Agregar nueva funcionalidad:
+
 1. Modifica `app.component.ts` para agregar nuevas propiedades y métodos
 2. Actualiza `app.component.html` para incluir la nueva UI
 3. Ajusta `app.component.css` para los estilos
@@ -147,6 +158,7 @@ La aplicación utiliza un sistema de navegación simple basado en una propiedad 
 ## 📱 Responsive Design
 
 La aplicación está optimizada para diferentes tamaños de pantalla:
+
 - **Desktop**: Layout completo con sidebar
 - **Tablet**: Layout adaptado
 - **Mobile**: Layout en columna con navegación vertical
