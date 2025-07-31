@@ -2,18 +2,52 @@
 
 Una aplicación web básica construida con Angular 19 que demuestra las funcionalidades principales del framework.
 
+## 🚀 Despliegue en Vercel
+
+### ⚡ Despliegue automático:
+
+1. **Fork o clona este repositorio**
+2. **Conecta con Vercel**:
+   - Ve a [Vercel.com](https://vercel.com)
+   - Inicia sesión con tu cuenta de GitHub
+   - Importa este repositorio
+   - Vercel detectará automáticamente que es una aplicación Angular
+
+3. **Configuración automática**:
+   - Vercel usará la configuración de `vercel.json`
+   - El comando de build será: `npm run vercel-build`
+   - La carpeta de salida será: `dist/mi-app-angular/browser`
+
+4. **Variables de entorno** (opcional):
+   - No se requieren variables de entorno especiales
+   - La aplicación usa la API pública de GitHub
+
+### 🔧 Despliegue manual:
+
+```bash
+# Instalar Vercel CLI
+npm i -g vercel
+
+# En el directorio del proyecto
+cd mi-app-angular
+
+# Desplegar
+vercel
+
+# Para deploys de producción
+vercel --prod
+```
+
 ## 🌟 Características
 
 ### ✨ Funcionalidades implementadas:
 
-- **Navegación SPA**: Sistema de navegación de una sola página entre diferentes vistas
-- **Contador interactivo**: Incrementar, decrementar y resetear valores
-- **Lista de tareas (TODO)**: Crear, completar y eliminar tareas
-- **Formulario de contacto**: Formulario reactivo con validación
-- **Data binding**: Bidireccional y unidireccional
-- **Directivas estructurales**: *ngIf, *ngFor
-- **Event handling**: Manejo de eventos de click, submit, etc.
-- **Diseño responsive**: Adaptable a diferentes tamaños de pantalla
+- **🔍 Búsqueda de usuarios de GitHub**: Busca cualquier usuario y ve sus repositorios
+- **👤 Perfil completo**: Avatar, nombre, bio, estadísticas y enlaces
+- **📊 Filtros avanzados**: Por lenguaje, fecha, estrellas, nombre
+- **📦 Información detallada**: Cada repo muestra estrellas, forks, lenguaje, topics
+- **🎨 Diseño moderno**: Responsive design con tema GitHub-style
+- **⚡ SSR optimizado**: Server-Side Rendering para mejor SEO y performance
 
 ### 🎨 Tecnologías utilizadas:
 

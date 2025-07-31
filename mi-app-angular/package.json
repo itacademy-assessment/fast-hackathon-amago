@@ -5,9 +5,16 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:vercel": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:mi-app-angular": "node dist/mi-app-angular/server/server.mjs"
+    "serve:ssr:mi-app-angular": "node dist/mi-app-angular/server/server.mjs",
+    "vercel-build": "ng build --configuration production"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   },
   "private": true,
   "dependencies": {
