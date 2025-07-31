@@ -1,1 +1,23 @@
-<p>about works!</p>
+<section class="about-section">
+    <h1>Meet Our Amazing Team</h1>
+    
+    <div class="team-grid">
+        <div class="team-member" *ngFor="let member of teamMembers">
+            <div class="member-image">
+                <img [src]="member.image" [alt]="member.name">
+            </div>
+            <div class="member-info">
+                <h2>{{member.name}}</h2>
+                <p class="position">{{member.position}}</p>
+                <p class="github" *ngIf="member.github">
+                    <a [href]="member.githubUrl" target="_blank">{{member.github}}</a>
+                </p>
+                <p class="birthday">Birthday: {{member.birthday | date:'MMMM d'}} {{getZodiacSign(member.birthday).emoji}}</p>
+                <p class="description">{{member.description}}</p>
+                <p class="fav-show" *ngIf="member.favShow">
+                    Favorite Show: {{member.favShow}}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
