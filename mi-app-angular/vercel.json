@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/mi-app-angular/browser",
+  "outputDirectory": "dist/browser",
   "rewrites": [
     {
       "source": "/(.*)",
