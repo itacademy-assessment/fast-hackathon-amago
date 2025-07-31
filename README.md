@@ -5,6 +5,8 @@
 
 ## 🎯 Objetivo General
 
+
+
 Crear una **aplicación web responsive (mob page)** que se conecte a GitHub para visualizar y gestionar los repositorios de los integrantes del equipo.
 
 ## ✨ Funcionalidades Requeridas
