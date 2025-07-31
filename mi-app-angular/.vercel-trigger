@@ -1,0 +1,9 @@
+# Deployment trigger
+
+This file is used to trigger a fresh deployment on Vercel.
+Last updated: July 31, 2025 - 12:15 PM
+
+Vercel should use:
+- Build Command: npm run build
+- Output Directory: dist/browser
+- Latest commit: 42d108e
